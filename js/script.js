@@ -6,6 +6,8 @@ function init () {
   // var winningCombi = [[][][]]
   var currentPlayer = 1
 
+  var start =document.getElementById("start");
+
   var imgs = document.getElementsByClassName('box'),
   conditions = true,
   p1 = document.getElementById("p1"),     // Call the paragraph fields with id
@@ -17,6 +19,7 @@ function init () {
   p7 = document.getElementById("p7"),
   p8 = document.getElementById("p8"),
   p9 = document.getElementById("p9");
+  start = document.getElementById("start");
 
   for (var i = 0; i < imgs.length; i++) {
     imgs[i].addEventListener('click', boxClick)
@@ -84,3 +87,19 @@ function checkDraw () {
   reStart();
 }
 }
+
+function reStart(){
+  p1.setAttribute("class", "box");
+  p2.setAttribute("class", "box");
+  p3.setAttribute("class", "box");
+  p4.setAttribute("class", "box");
+  p5.setAttribute("class", "box");
+  p6.setAttribute("class", "box");
+  p7.setAttribute("class", "box");
+  p8.setAttribute("class", "box");
+  p9.setAttribute("class", "box");
+
+}
+
+start.addEventListener("click", reStart);
+start.addEventListener("touchend", reStart);

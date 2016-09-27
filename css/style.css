@@ -6,6 +6,13 @@ h1 {
   margin-left: 42%;
 }
 
+button {
+  position: relative;
+  left: 48%;
+  font-size: 100%;
+  margin-bottom: 20px;
+}
+
 .container {
   width: 610px;
   height: 600px;
