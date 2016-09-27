@@ -1,22 +1,36 @@
 
 h1 {
   color: red;
+  font-family: fantasy;
+  font-size: 50px;
+  margin-left: 42%;
 }
 
-.row {
-  border: 10px solid blue;
+.container {
+  width: 610px;
+  height: 600px;
+  margin-left: 30%;
 }
-
 .box {
+  display: relative;
   display: inline-block;
-  width: 32%;
-  height: 100px;
   cursor: pointer;
+  float:left;
+  width: 200px;
+  height: 200px;
+  border: 1px dashed black;
 }
 
-.clickx {
-  background-color: rgb(201, 177, 92);
+.x {
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('http://www.clker.com/cliparts/e/0/f/4/12428125621652493290X_mark_18x18_02.svg.hi.png');
 }
 
-.clicko {
-  background-color:rgb(219, 0, 92);
+.o {
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('http://www.clker.com/cliparts/0/3/0/b/11970891241590339371vermeil_Electronic_Circuit_Node_Symbol.svg.med.png');
+}
